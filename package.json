@@ -1,0 +1,36 @@
+{
+  "name": "north-vietnamese-cuisine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/dtn36/north-vietnamese-cuisine"
+  },
+  "keywords": [
+    "North Vietnamese Cuisine",
+    "Recipe Collection",
+    "Ingredient Spotlight",
+    "Cooking Techniques",
+    "Regional Varieties",
+    "Cultural Context"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.9",
+    "express": "^4.19.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.3",
+    "@babel/node": "^7.23.9",
+    "@babel/preset-env": "^7.24.3",
+    "nodemon": "^3.1.0"
+  }
+}
