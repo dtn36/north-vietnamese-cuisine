@@ -2,7 +2,7 @@ import bodyParser from "body-parser"; // Middleware này được sử dụng đ
 import "dotenv/config"; // Import và cấu hình biến môi trường từ file .env. File .env thường chứa các biến môi trường như cấu hình kết nối cơ sở dữ liệu, cổng server, hoặc các thông tin nhạy cảm khác.
 import express from "express"; // Import framework Express để tạo server và xử lý các yêu cầu HTTP.
 import viewEngine from "./config/viewEngine";
-import initWebRoutes from "./route/web";
+import initWebRoutes from "./routes/web";
 
 let application = express(); // Tạo một instance của Express và lưu vào biến application.
 

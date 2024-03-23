@@ -1,11 +1,12 @@
 import express from "express";
+import adminRouter from "./adminRoutes";
+import userRouter from "./userRoutes";
 
 let router = express.Router();
 
 let initWebRoutes = (application) => {
-  router.get("/", (request, response) => {
-    return response.send("hello world!");
-  });
+  router.use("/admin", adminRouter);
+  router.use("/", userRouter);
 
   return application.use("/", router);
 };
