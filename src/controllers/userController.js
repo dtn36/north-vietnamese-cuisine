@@ -1,5 +1,5 @@
 let getHomepage = (request, response) => {
-  return response.render("user/layout.ejs", {
+  return response.render("users/layout.ejs", {
     title: "Trang chủ",
     mainInclude: "./home.ejs",
   });
