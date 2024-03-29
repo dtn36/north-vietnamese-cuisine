@@ -1,0 +1,21 @@
+.navigation {
+  background-color: #f0f0f0;
+  width: 250px;
+}
+
+.navigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.navigation ul li.active,
+.navigation ul li:hover {
+  background-color: #ddd;
+}
+
+.navigation ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
