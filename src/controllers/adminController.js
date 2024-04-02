@@ -12,13 +12,6 @@ let getCategoriesManagementPage = (request, response) => {
   });
 };
 
-let getIngredientsManagementPage = (request, response) => {
-  return response.render("admin/layout.ejs", {
-    title: "Quản lý nguyên liệu",
-    mainInclude: "./ingredients.ejs",
-  });
-};
-
 let getDishesManagementPage = (request, response) => {
   return response.render("admin/layout.ejs", {
     title: "Quản lý món ăn",
@@ -36,7 +29,6 @@ let getUsersManagementPage = (request, response) => {
 module.exports = {
   getHomePage: getHomePage,
   getCategoriesManagementPage: getCategoriesManagementPage,
-  getIngredientsManagementPage: getIngredientsManagementPage,
   getDishesManagementPage: getDishesManagementPage,
   getUsersManagementPage: getUsersManagementPage,
 };

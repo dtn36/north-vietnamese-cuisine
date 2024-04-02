@@ -5,7 +5,6 @@ const adminRouter = express.Router();
 
 adminRouter.get("/", adminController.getHomePage);
 adminRouter.get("/categories", adminController.getCategoriesManagementPage);
-adminRouter.get("/ingredients", adminController.getIngredientsManagementPage);
 adminRouter.get("/dishes", adminController.getDishesManagementPage);
 adminRouter.get("/users", adminController.getUsersManagementPage);
 
