@@ -26,9 +26,14 @@ let getUsersManagementPage = (request, response) => {
   });
 };
 
+let getLoginPage = (request, response) => {
+  return response.render("admin/login.ejs");
+};
+
 module.exports = {
   getHomePage: getHomePage,
   getCategoriesManagementPage: getCategoriesManagementPage,
   getDishesManagementPage: getDishesManagementPage,
   getUsersManagementPage: getUsersManagementPage,
+  getLoginPage: getLoginPage,
 };

@@ -7,5 +7,6 @@ adminRouter.get("/", adminController.getHomePage);
 adminRouter.get("/categories", adminController.getCategoriesManagementPage);
 adminRouter.get("/dishes", adminController.getDishesManagementPage);
 adminRouter.get("/users", adminController.getUsersManagementPage);
+adminRouter.get("/login", adminController.getLoginPage);
 
 export default adminRouter;
