@@ -1,5 +1,6 @@
 body {
-  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
 
   display: flex;
   justify-content: center;
@@ -7,42 +8,116 @@ body {
 
   height: 100vh;
   margin: 0;
+  padding: 0;
 }
 
-.login-container {
+.container {
   background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+
+  width: 70%;
+}
+
+.left {
+  flex: 1;
+  position: relative;
+
   text-align: center;
+  overflow: hidden;
 
-  width: 80vw;
-  max-width: 300px;
   padding: 20px;
-
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-  width: 100%;
+.left::before {
+  content: "";
+  position: absolute;
+
+  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+  border-radius: 50%;
+
+  width: 200%;
+  height: 200%;
+  top: -90%;
+  left: -100%;
+
+  z-index: 1;
 }
 
-input,
-button {
-  width: 100%;
-  padding: 10px;
-  margin-top: 10px;
+.left img {
+  position: relative;
+  z-index: 1;
+}
 
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-sizing: border-box;
+.right {
+  flex: 1;
+}
+
+.login-form {
+  width: 60%;
+  max-width: 300px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.input-field {
+  background-color: #f0f0f0;
+  border-radius: 48px;
+
+  position: relative;
+  display: grid;
+  grid-template-columns: 15% 85%;
+
+  height: 52px;
+  margin: 12px 0;
+  padding: 0 0.4rem;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 52px;
+  transition: 0.4s;
+  font-size: 1.2rem;
+  color: #acacac;
+}
+
+.input-field input {
+  background: none;
   outline: none;
+  border: none;
+  color: #333;
+
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 12px;
 }
 
-button {
-  background-color: #007bff;
+.input-field input::placeholder {
+  color: #aaa;
+  font-weight: 500;
+}
+
+.button-login {
+  background-color: #5995fd;
   color: #fff;
+  border: none;
+  border-radius: 48px;
+  outline: none;
+
+  width: 150px;
+  height: 48px;
+  margin: 10px 0;
+  font-weight: 600;
+
+  text-transform: uppercase;
   cursor: pointer;
+  transition: 0.4s;
 }
 
-button:hover {
-  background-color: #0056b3;
+.button-login:hover {
+  background-color: #4d84e2;
 }
