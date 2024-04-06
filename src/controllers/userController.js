@@ -5,6 +5,11 @@ let getHomepage = (request, response) => {
   });
 };
 
+let getLoginpage = (request, response) => {
+  return response.render("users/login.ejs");
+};
+
 module.exports = {
   getHomepage: getHomepage,
+  getLoginpage: getLoginpage,
 };
