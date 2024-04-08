@@ -1,0 +1,13 @@
+const path = require("path");
+
+module.exports = {
+  config: path.resolve("./src/config", "config.json"),
+  "migrations-path": path.resolve("./src", "migrations"),
+  "models-path": path.resolve("./src", "models"),
+  "seeders-path": path.resolve("./src", "seeders"),
+};
+
+// Câu lệnh chạy sequelize: node_modules/.bin/sequelize init
+// Câu lệnh tạo model: npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+// Câu lệnh tọa seeder: npx sequelize-cli seed:generate --name demo-user
+// Câu lệnh Tạo migrations: npx sequelize-cli db:migrate
