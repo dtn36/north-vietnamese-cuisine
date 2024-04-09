@@ -5,7 +5,8 @@
     "database": "northern_dishes",
     "host": "127.0.0.1",
     "port": 1910,
-    "dialect": "mysql"
+    "dialect": "mysql",
+    "logging": false
   },
   "test": {
     "username": "root",
