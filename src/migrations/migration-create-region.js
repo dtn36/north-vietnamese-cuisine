@@ -1,24 +1,24 @@
 "use strict";
 module.exports = {
-  async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("admins", {
-      admin_id: {
+  up: async (queryInterface, Sequelize) => {
+    await queryInterface.createTable("regions", {
+      region_id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER(11),
       },
-      admin_username: {
-        allowNull: false,
+      region_name: {
         type: Sequelize.STRING(50),
+        allowNull: false,
       },
-      admin_password: {
+      region_description: {
+        type: Sequelize.TEXT,
         allowNull: false,
-        type: Sequelize.STRING(50),
       },
-      admin_full_name: {
+      region_image_url: {
+        type: Sequelize.STRING(255),
         allowNull: false,
-        type: Sequelize.STRING(50),
       },
       created_at: {
         allowNull: false,
@@ -31,6 +31,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("admins");
+    await queryInterface.dropTable("regions");
   },
 };

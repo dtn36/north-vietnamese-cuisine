@@ -8,10 +8,11 @@ module.exports = (sequelize, DataTypes) => {
   }
   Rating.init(
     {
-      rating_id: DataTypes.INTEGER(11),
       food_id: DataTypes.INTEGER(11),
       user_id: DataTypes.INTEGER(11),
       rating_value: DataTypes.INTEGER(5),
+      created_at: DataTypes.TIMESTAMP,
+      updated_at: DataTypes.TIMESTAMP,
     },
     {
       sequelize,

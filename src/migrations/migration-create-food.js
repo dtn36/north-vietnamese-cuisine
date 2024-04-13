@@ -17,29 +17,25 @@ module.exports = {
         allowNull: false,
         type: Sequelize.TEXT,
       },
-      food_region: {
-        allowNull: false,
-        type: Sequelize.STRING(50),
-      },
       food_image_url: {
         allowNull: false,
         type: Sequelize.STRING(255),
       },
-      category_id: {
-        allowNull: false,
+      region_id: {
         type: Sequelize.INTEGER(11),
+        allowNull: false,
         references: {
-          model: "categories",
-          key: "category_id",
+          model: "regions",
+          key: "region_id",
         },
       },
       created_at: {
         allowNull: false,
-        type: Sequelize.DATE,
+        type: "TIMESTAMP",
       },
       updated_at: {
         allowNull: false,
-        type: Sequelize.DATE,
+        type: "TIMESTAMP",
       },
     });
   },
